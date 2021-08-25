@@ -1,0 +1,75 @@
+.hamburguer {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  z-index: 100;
+  right: 2rem;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+
+  .line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 1px #000;
+    transition: transform 0.75s;
+
+    &:nth-child(2) {
+      width: 70%;
+    }
+  }
+
+  &.show-menu {
+    right: 17rem;
+
+    #line1 {
+      background-color: #000;
+      box-shadow: none;
+      transform: rotate(45deg) translate(0.3rem, 0.4rem);
+    }
+
+    #line2 {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    #line3 {
+      background-color: #000;
+      box-shadow: none;
+      transform: rotate(-45deg) translate(0.35rem, -0.4rem);
+    }
+
+    &:hover {
+      span {
+        opacity: 1;
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $medium-blue;
+    color: $light-blue;
+    font-family: $font-secondary;
+    opacity: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      border-right: 0.5rem solid $medium-blue;
+      border-top: 0.5rem solid transparent;
+      border-left: 0.5rem solid transparent;
+      border-bottom: 0.5rem solid transparent;
+      left: -1rem;
+    }
+  }
+}

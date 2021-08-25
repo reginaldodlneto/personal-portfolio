@@ -31,8 +31,16 @@
     />
     <link rel="manifest" href="./favicon_io/site.webmanifest" />
   </head>
+
   <body>
     <main class="container">
+      <div class="hamburguer">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+        <span>fechar</span>
+      </div>
+
       <header>
         <div class="img-wrapper">
           <img src="./images/background.jpg" alt="background do site" />
@@ -43,6 +51,30 @@
           <button>Saiba mais</button>
         </div>
       </header>
+
+      <aside class="sidebar">
+        <nav>
+          <ul class="menu">
+            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Sobre mim</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Conhecimentos</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Projetos</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </aside>
     </main>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

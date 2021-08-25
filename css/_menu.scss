@@ -1,0 +1,59 @@
+.sidebar {
+  width: 20rem;
+  height: 100vh;
+  background-color: $base-color;
+  position: fixed;
+  top: 0;
+  right: -20rem;
+  transition: all 0.75s;
+
+  .menu {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .menu-item {
+      text-align: center;
+      margin-bottom: 0.5rem;
+
+      .menu-link {
+        font-family: $font-primary;
+        font-size: 2rem;
+        color: $dark-grey;
+        transition: color 0.5s;
+
+        &:hover {
+          color: $light-blue;
+        }
+      }
+    }
+  }
+
+  &.show-menu {
+    right: 0;
+  }
+
+  .social-media {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    i {
+      color: $dark-grey;
+      height: 2.5rem;
+      width: 2.5rem;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: color 0.5s;
+
+      &:hover {
+        color: $light-blue;
+      }
+    }
+  }
+}
