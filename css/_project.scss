@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 
   .card {
     width: 18rem;
@@ -80,6 +81,7 @@
         color: $light-blue;
         border-radius: 0.5rem;
         box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+        text-transform: uppercase;
       }
     }
   }

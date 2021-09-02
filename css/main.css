@@ -8,6 +8,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .hamburguer {
   width: 2rem;
   height: 2rem;
@@ -209,6 +213,7 @@ header {
   top: 0;
   right: -20rem;
   transition: all 0.75s;
+  z-index: 1;
 }
 .sidebar .menu {
   position: absolute;
@@ -315,6 +320,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 .project .card {
   width: 18rem;
@@ -379,10 +385,56 @@ header {
   color: #01d4f4;
   border-radius: 0.5rem;
   box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
 }
 
 @media (max-width: 888px) {
   .card {
     margin-bottom: 2rem;
   }
+}
+footer {
+  width: 100%;
+  height: 7rem;
+  background-color: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content p {
+  font-family: "Roboto Mono", monospace;
+  color: #01d4f4;
+  font-size: 1rem;
+}
+footer .social-list a {
+  margin: 0 2rem;
+  color: #01d4f4;
+  font-size: 1.5rem;
+}
+footer .social-list ul {
+  display: flex;
+}
+
+#link-up {
+  position: fixed;
+  right: 2rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(90deg, #0a1834 0%, #125d75 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #01d4f4;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.6rem #00000009;
+  opacity: 1;
+}
+#link-up.show-menu {
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */

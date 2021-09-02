@@ -1,0 +1,23 @@
+#link-up {
+  position: fixed;
+  right: 2rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 24, 52, 1) 0%,
+    rgba(18, 93, 117, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $light-blue;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.6rem #00000009;
+  opacity: 1;
+
+  &.show-menu {
+    opacity: 0;
+  }
+}

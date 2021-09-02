@@ -1,0 +1,32 @@
+footer {
+  width: 100%;
+  height: 7rem;
+  background-color: $dark-grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-family: $font-secondary;
+      color: $light-blue;
+      font-size: 1rem;
+    }
+  }
+
+  .social-list {
+    a {
+      margin: 0 2rem;
+      color: $light-blue;
+      font-size: 1.5rem;
+    }
+
+    ul {
+      display: flex;
+    }
+  }
+}
