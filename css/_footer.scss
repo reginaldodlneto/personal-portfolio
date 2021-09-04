@@ -30,3 +30,31 @@ footer {
     }
   }
 }
+
+@media (max-width: 706px) {
+  footer {
+    .footer-content {
+      padding: 2rem;
+    }
+  }
+}
+
+@media (max-width: 495px) {
+  footer {
+    .footer-content {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .social-list {
+      a {
+        font-size: 1.25rem;
+      }
+
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+}

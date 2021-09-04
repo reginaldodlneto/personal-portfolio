@@ -45,8 +45,10 @@
     }
 
     .skill-text {
-      font-family: $font-action;
+      font-family: $font-secondary;
+      font-weight: 500;
       font-size: 1.1rem;
+      color: $dark-grey;
     }
   }
 

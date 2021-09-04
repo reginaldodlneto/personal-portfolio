@@ -21,3 +21,15 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 845px) {
+  #link-up {
+    bottom: 5.5rem;
+  }
+}
+
+@media (max-width: 482px) {
+  #link-up {
+    bottom: 6.5rem;
+  }
+}
