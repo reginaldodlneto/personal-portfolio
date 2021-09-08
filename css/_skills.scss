@@ -1,65 +1,61 @@
-.section {
-  background-color: $bg-color;
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .section-header {
+  h1 {
+    font-family: $font-primary;
+    font-size: 3rem;
+    color: $dark-blue;
+    margin-bottom: 2.5rem;
+    border-bottom: solid 3px $light-blue;
+  }
+}
+
+.skills {
+  display: flex;
+  margin: 0 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .skill {
+    padding: 2rem;
+  }
+
+  .skill-header {
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 
-    h1 {
-      font-family: $font-primary;
-      font-size: 3rem;
+    i {
+      font-size: 2rem;
       color: $dark-blue;
-      margin-bottom: 2.5rem;
-      border-bottom: solid 3px $light-blue;
-    }
-  }
-
-  .skills {
-    display: flex;
-    margin: 0 3rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    .skill {
-      padding: 2rem;
     }
 
-    .skill-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1rem;
-
-      i {
-        font-size: 2rem;
-        color: $dark-blue;
-      }
-
-      h3 {
-        font-family: $font-secondary;
-        color: $dark-blue;
-        margin-left: 1rem;
-        font-size: 1.5rem;
-      }
-    }
-
-    .skill-text {
+    h3 {
       font-family: $font-secondary;
-      font-weight: 500;
-      font-size: 1.1rem;
-      color: $dark-grey;
+      color: $dark-blue;
+      margin-left: 1rem;
+      font-size: 1.5rem;
     }
   }
 
-  .image-wrapper {
-    margin: auto;
-    height: 300px;
-    width: 300px;
+  .skill-text {
+    font-family: $font-secondary;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: $dark-grey;
+  }
+}
 
-    img {
-      width: 100%;
-    }
+.image-wrapper {
+  margin: auto;
+  height: 300px;
+  width: 300px;
+
+  img {
+    width: 100%;
   }
 }
 
