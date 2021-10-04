@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.section {
+  background-color: #f5f5f5;
+}
+
 .hamburguer {
   width: 2rem;
   height: 2rem;
@@ -259,58 +263,58 @@ header {
   color: #01d4f4;
 }
 
-.section {
-  background-color: #f5f5f5;
-}
-.section .section-header {
+.section-header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section .section-header h1 {
+.section-header h1 {
   font-family: "Arvo", sans-serif;
   font-size: 3rem;
   color: #0a1834;
+  margin-top: 2rem;
   margin-bottom: 2.5rem;
   border-bottom: solid 3px #01d4f4;
 }
-.section .skills {
+
+.skills {
   display: flex;
   margin: 0 3rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.section .skills .skill {
+.skills .skill {
   padding: 2rem;
 }
-.section .skills .skill-header {
+.skills .skill-header {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
-.section .skills .skill-header i {
+.skills .skill-header i {
   font-size: 2rem;
   color: #0a1834;
 }
-.section .skills .skill-header h3 {
+.skills .skill-header h3 {
   font-family: "Raleway", sans-serif;
   color: #0a1834;
   margin-left: 1rem;
   font-size: 1.5rem;
 }
-.section .skills .skill-text {
+.skills .skill-text {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 1.1rem;
   color: #292929;
 }
-.section .image-wrapper {
+
+.image-wrapper {
   margin: auto;
   height: 300px;
   width: 300px;
 }
-.section .image-wrapper img {
+.image-wrapper img {
   width: 100%;
 }
 
@@ -372,7 +376,7 @@ header {
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
   color: #01d4f4;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .project .card .card-info p {
   font-family: "Arvo", sans-serif;
